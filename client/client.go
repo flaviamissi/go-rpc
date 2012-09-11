@@ -1,7 +1,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 	"net/rpc"
 )
 
@@ -39,8 +39,8 @@ func main() {
 	if e != nil {
 		panic(e)
 	}
-    instReq := new(InstanceRequest)
-    instResp := new(InstanceResponse)
-    e = NewInstance(client, instReq, instResp)
+	instReq := new(InstanceRequest)
+	instResp := new(InstanceResponse)
+	e = NewInstance(client, instReq, instResp)
 	fmt.Println(instResp)
 }
